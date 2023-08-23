@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+	<link rel="icon" href="image/portfolio.png">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="css/home.css">
+	<title>home</title>
+	<style>
+		.pl{
+			padding-left: 78px;
+		}
+		.py{
+			padding-right: 60px;
+		}
+		.navbar-nav li{
+			padding:0 10px;
+		}
+		.nav-link:hover{
+			color:#0d6efd;
+		}
+		@media (max-width: 768px){
+			.pl{
+				padding-left: 18px !important;
+			}
+			.py{
+				padding-right: 0 !important;
+			}
+			.booking{
+				position: relative;
+				top: -4px;
+			}
+			.container{
+				margin-bottom: 10px !important;
+			}
+			.col-md-6 p{
+				text-align: center;
+			}
+		}
+		a{
+			text-decoration: none;
+		}
+		.bold{
+			font-weight: bold;
+		}
+		.mr{
+			margin-right: 8px;
+		}
+	</style>
+</head>
+<body>
+	<!--navbar start-->
+	<div class="container-fluid nav-bar p-0">
+		<nav class="navbar navbar-expand-md bg-light pl py">
+			<a href class="navbar-brand">
+				<h1 class="text-primary"><span class="text-dark">TRAVEL</span>ER</h1>
+			</a>
+			<!--mobile view-->
+			<button class="navbar-toggler" data-bs-target="#a" data-bs-toggle="collapse">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<!--menu-->
+			<div  class="navbar-collapse collapse" id="a">
+				<ul class="navbar-nav ms-auto c">
+					<li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+					<li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+					<li class="nav-item"><a class="nav-link" href="service.html">Services</a></li>
+					<li class="nav-item"><a class="nav-link" href="package.html">Tour Packages</a></li>
+					<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+				</ul>
+			</div>
+		</nav>
+	</div>
+	<!--navbar end-->
+	
+	<!--slider-->
+	<div class="carousel slide" data-bs-ride="carousel" id="z">
+
+    <div class="carousel-inner">
+
+      <div class="carousel-item active" data-bs-interval="2000">
+
+      <img src="image/carousel-1.jpg" class="w-100" alt="...">
+      </div>
+
+      <div class="carousel-item " data-bs-interval="2000">
+
+      <img src="image/carousel-2.jpg" class="w-100" alt="...">
+      </div>
+    </div>
+	<!--  carousel-inner  end-->
+
+
+    	<button class="carousel-control-prev" type="button" data-bs-target="#z" data-bs-slide="prev">
+    			<span class="carousel-control-prev-icon"></span>
+    	</button>
+   		<button class="carousel-control-next" type="button" data-bs-target="#z" data-bs-slide="next">
+    			<span class="carousel-control-next-icon"></span>
+  		</button>
+  </div>
+  <!--carousel end-->
+
+  <!--booking start-->
+  <div class="container-fluid booking pb-2 mt-5">
+  		<div class="container pb-2">
+  			<div class="bg-light shadow" style="padding: 38px; background: radial-gradient(#0000000a, #edeef1);">
+  				<div class="row">
+  						<div class="col-md-10">
+  							<div class="row">
+  								<div class="col-md-3">
+  									<div class="mb-3 mb-md-0">
+  										<select class="custom-select px-4" style="height: 47px;">
+  											<option selected>Destination</option>
+  											<option value="1">kashmir</option>
+  											<option value="2">kanyakumari</option>
+  											<option value="3">Goa</option>
+  											<option value="4">kullu-manali</option>
+  										</select>
+  								</div>
+  									</div>
+  									<div class="col-md-3">
+  											<div class="mb-3 mb-md-0">
+  												<div class="date" id="date1" data-target-input="nearest">
+  													<input type="date" class="form-control p-4 datetimepicker-input" placeholder="Depart Date" data-target="#date1" data-toggle="datetimepicker">
+  												</div>
+  											</div>
+  									</div>
+  									<div class="col-md-3">
+  											<div class="mb-3 mb-md-0">
+  												<div class="date" id="date2" data-target-input="nearest">
+  													<input type="date" class="form-control p-4 datetimepicker-input" placeholder="Return Date" data-target="#date2" data-toggle="datetimepicker">
+  												</div>
+  											</div>
+  									</div>
+  								<div class="col-md-3">
+  									<div class="mb-3 mb-md-0">
+  										<select class="custom-select px-4" style="height: 47px;">
+  											<option selected>Duration</option>
+  											<option value="1">2 Day 3 Night</option>
+  											<option value="2">3 Day 4 Night</option>
+  											<option value="3">5 Day 7 Night</option>
+  										</select>
+  								</div>
+  								</div>
+  							</div>
+  						</div>
+  						<div class="col-md-2">
+  							<button class="btn btn-primary btn-block"type="Submit">Submit</button>
+  						</div>
+  				</div>
+  			</div>
+  		</div>
+  </div>
+	<!--booking end-->
+
+	 <!--destination part start-->
+
+	 <div class="container" style="margin-bottom: 100px;">
+	 		<h1 class="text-center text pb-5">Amazing Tourist Place of <span style="color:#0d6efd;">India</span></h1>
+	 			<div class="row">
+	 				<div class="col-md-6 bg-light shadow">
+	 					<img src="image/manali.jpeg" alt="manali" width="100%" height="100%">
+	 				</div>
+	 				<div class="col-md-6" style="text-align: left;">
+	 						<h2>Manali – Stream of Beas River</h2>
+	 				<br>
+	 						<p style="color: #bba087;">The Beas River is the most attractive and beautiful sights in the Manali valley. The beautiful view and rippling sound of the river fascinate the lots of tourists. You may feel that you are in heaven when you will seat on a stone and water flowing over your feet. So don’t miss the Beas River whenever you visit Manali.</p>
+	 				<br><br>
+	 						<h3>5 Days in Manali Rs 7,400</h3>
+	 				</div>
+	 			</div>
+	 	</div>
+
+	 	<div class="container">
+	 		<div class="row">
+	 				<div class="col-md-6" style="text-align: left;">
+	 					<h2>Goa Arambol Beach</h2>
+	 				<br>
+	 					<p style="color: #bba087;">Arambol Beach is one of most charming beaches in Goa which is located near about 50 Kms from Panaji.  Popularity of Arambol Beach is growing day by day due to its scenic beauty and wide beach of sand.</p>
+	 				<br><br>
+	 					<h3>3 Days in Goa Rs 12,500</h3>
+	 				</div>
+
+	 				<div class="col-md-6 bg-light shadow">
+	 					<img src="image/Goa.jpeg" alt="Goa" width="100%" height="100%">
+	 				</div>
+	 		</div>  
+	 </div>
+
+	 <!--destination part end-->
+
+	 <!--footer start--> 
+
+	<div class="container-fluid bg-dark text-white-50" style="padding: 35px;margin-top: 50px;">
+	 	<div class="row pt-5">
+
+	 		<div class="col-md-3 mb-3">
+	 			<a href class="navbar-brand">
+					<h1 class="text-primary" style="font-weight: bold;"><span class="text-white">TRAVEL</span>ER</h1>
+				</a>
+	 			<p>A traveller is a person who is making a journey or a person who travels a lot. Many air travellers suffer puffy ankles and feet during long flights. A traveller is a person who travels from place to place, often living in a van or other vehicle, rather than living in one place.</p>
+	 			<h6 class="text-white text-uppercase mt-4 mb-3" style="letter-spacing: 6px;">Follow Us</h6>
+	 			<div class="d-flex justify-content">
+	 				<a class="btn btn-outline-primary btn-square" href="#"><i class="fa-brands fa-twitter"></i></a>
+	 				<a class="btn btn-outline-primary btn-square" href="#"><i class="fa-brands fa-facebook-f"></i></a>
+	 				<a class="btn btn-outline-primary btn-square" href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+	 				<a class="btn btn-outline-primary btn-square" href="#"><i class="fa-brands fa-instagram"></i></a>
+	 			</div>
+	 		</div>
+
+	 		<div class="col-md-3 mb-3">
+	 			<h5 class="text-white text-uppercase bold mb-4" style="letter-spacing:4px;">Our Services</h5>
+	 			<div class="d-flex flex-column justify-content">
+	 				<a href="#" class="text-white-50 mb-2">
+	 					<i class="fa-solid fa-arrow-right mr"></i>About</a> 
+	 				<a href="#" class="text-white-50 mb-2">
+	 					<i class="fa-solid fa-arrow-right mr"></i>Destination</a>
+	 				<a href="#" class="text-white-50 mb-2">
+	 					<i class="fa-solid fa-arrow-right mr"></i>Services</a>
+	 				<a href="#" class="text-white-50 mb-2">
+	 					<i class="fa-solid fa-arrow-right mr"></i>Packages</a>
+	 				<a href="#" class="text-white-50 mb-2">
+	 					<i class="fa-solid fa-arrow-right mr"></i>Guides</a>
+	 				<a href="#" class="text-white-50 mb-2">
+	 					<i class="fa-solid fa-arrow-right mr"></i>Testimonial</a>
+	 				<a href="#" class="text-white-50 mb-2">
+	 					<i class="fa-solid fa-arrow-right mr"></i>Blog</a>
+	 			</div> 	
+	 		</div>
+
+	 		<div class="col-md-3 mb-3">
+	 			<h5 class="text-white text-uppercase bold mb-4" style="letter-spacing:4px;">Usefull Links</h5>
+	 			<div class="d-flex flex-column justify-content">
+	 				<a href="#" class="text-white-50 mb-2">
+	 					<i class="fa-solid fa-arrow-right mr"></i>About</a> 
+	 				<a href="#" class="text-white-50 mb-2">
+	 					<i class="fa-solid fa-arrow-right mr"></i>Destination</a>
+	 				<a href="#" class="text-white-50 mb-2">
+	 					<i class="fa-solid fa-arrow-right mr"></i>Services</a>
+	 				<a href="#" class="text-white-50 mb-2">
+	 					<i class="fa-solid fa-arrow-right mr"></i>Packages</a>
+	 				<a href="#" class="text-white-50 mb-2">
+	 					<i class="fa-solid fa-arrow-right mr"></i>Guides</a>
+	 				<a href="#" class="text-white-50 mb-2">
+	 					<i class="fa-solid fa-arrow-right mr"></i>Testimonial</a>
+	 				<a href="#" class="text-white-50 mb-2">
+	 					<i class="fa-solid fa-arrow-right mr"></i>Blog</a>
+	 			</div> 	
+	 		</div>
+
+	 		<div class="col-md-3 mb-3">
+	 			<h5 class="text-white text-uppercase bold mb-4" style="letter-spacing:4px;">Contact Us</h5>
+	 			<p><i class="fa-solid fa-location-dot mr"></i>570 Balwant Nagar, Gandhi Road, Gwalior, M.P., INDIA </p>
+	 			<p><i class="fa-solid fa-phone mr"></i>+91 8982576828</p>
+	 			<p><i class="fa-solid fa-envelope mr"></i>info@example.com</p>
+	 			<h6 class="text-white text-uppercase mt-2 mb-3">Newsletter</h6>
+	 			<div class="w-100">
+	 				<div class="input-group">
+	 					<input type="email" placeholder="Your Email" class="form-control" style="padding:15px;border-radius: 0;">
+	 					<div class="input-group-append">
+	 						<button class="btn btn-primary"style="border-radius:0;padding: 15px;">Sign Up</button>
+	 					</div>
+		 			</div>
+		 		</div>
+		 	</div>	
+		</div>
+	</div>
+
+	<div class="container-fluid bg-dark text-white-50 border-top" style="border-color: rgba(256,256,250,.1)!important;padding: 25px;">
+		 		<div class="row">
+		 			<div class="col-md-6">
+		 				<p>Copyright © <a href="#">Domain</a>. All Rights Reserved.</p>
+		 			</div>
+
+		 			<div class="col-md-6" style="text-align:right;">
+		 				<p>Designed by <a href="umeshprajapati1996@gmail.com">Umesh Prajapati</a></p>
+		 			</div>
+		 		</div>
+	</div>
+
+	<!--footer end-->
+</body>
+</html>

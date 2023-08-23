@@ -1,0 +1,83 @@
+body{
+	font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #656565;
+    background-color: whitesmoke;
+}
+.page-header{
+    background: url(../image/carousel-3.avif);
+    height: 430px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.booking{
+    position: relative;
+    top: -108px;
+    z-index: 1;
+}
+.custom-select{
+    background: #fff url(../image/icon.svg) no-repeat right 0.75rem center/8px 10px;
+    border: 1px solid #ced4da;
+    width: 100%;
+    border-radius: 0;
+    color: #495057;
+    font-weight: 400;
+    line-height: 1.5;
+    display: inline-block;
+    appearance: none;
+}
+.hb{
+    height: 47px;
+    border-radius: 0;
+}
+.btn-block{
+    height: 47px;
+    margin-top: -2px;
+    display: block;
+    width: 100%;
+    border-radius: 0;
+}
+.custom-text{
+    margin-left: -119px;
+    padding: 25px;
+    margin-top: 160px;
+    margin-bottom: 150px;
+}
+.text{
+    text-transform: uppercase;
+    font-family: 'prague';
+    letter-spacing: 1px;
+    font-size: 36px;
+}
+.btn-square{
+    border-radius: 0;
+    margin-right: 10px
+}
+@media (max-width:768px){
+    .custom-text{
+        margin-left: 0 !important;
+        margin-top: 35px !important;
+        margin-bottom: 35px !important;
+    }
+}
+.bg-ragistration{
+    background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(..//image/carousel-1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.wrapper{
+    width: 100%;
+    overflow: hidden;
+    border-radius: 5px;
+}
+.img{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.form-group{
+    margin-bottom: 1rem;
+}
